@@ -1,0 +1,20 @@
+{
+  "name": "MyWebsite",
+  "version": "1.0.0",
+  "description": "Website for projects and resume",
+  "scripts": {
+    "test": "echo Test your code by opening http://localhost:3000 in your browser.",
+    "jshint": "./node_modules/.bin/jshint --config .jshintrc --exclude=node_modules,test . || exit 0"
+  },
+  "author": "Tuan Anh Tran Caraballo <tranc2606@stanford.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.0.0",
+    "angular-route": "^1.5.8",
+    "express": "^4.13.3",
+    "jshint": "^2.9.1-rc2"
+  }
+}

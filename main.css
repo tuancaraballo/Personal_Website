@@ -1,0 +1,63 @@
+.toolbarStyle {
+	display: flex;
+	background-color: #EAE5E5;
+	justify-content: flex-start;
+	min-height: 100px;
+}
+
+#name{
+	font-size: 43px;
+	font-weight: bold;
+}
+
+.name_description{
+      padding-right: 60px;
+      margin-left: 182px;
+}
+
+body{
+	font-family: 'Noticia Text', serif;
+	color: #4D4D4D;
+	padding: 0px;
+}
+
+#slogan{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.buttons_section{
+	display: flex;
+	font-size: 15px;
+	align-items: center;
+}
+
+
+.buttons_style{
+	padding: 10px;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.buttons_style:visited{
+	color: inherit;
+}
+.buttons_style:hover{
+	color: #61D0D4;
+}
+
+/**/
+.buttons_style2{
+	padding: 10px;
+	cursor:pointer;
+	text-decoration:none;
+	color:#61D0D4; 
+}
+.buttons_style2:visited{
+	color: inherit;
+}
+.buttons_style2:hover{
+	color: #61D0D4;
+}
+
+ 
