@@ -29,10 +29,12 @@
 
   <!-- My CSS stylesheet for Main  -->
   <link rel="stylesheet" type="text/css" href="main.css" />
+  <!-- CSS for Home Page -->
+  <link rel="stylesheet" type="text/css" href="components/home.css" />
 
 </head>
 
-<body layout="column">
+<body>
 
 
       <div class="toolbarStyle" layout-align="center center" layout-wrap> 
@@ -49,9 +51,14 @@
       </section>    
       </div> 
 
-      <md-content flex>
+    <!--   <md-content flex>
             <div ng-view></div>
-      </md-content>
+      </md-content> -->
+     <!--  <div class="extend"> -->
+           <div ng-view class="extend"></div>
+   <!--    </div>  -->
+  
+     
 
 
   </body>

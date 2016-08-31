@@ -1,3 +1,11 @@
+html, body{
+	font-family: 'Noticia Text', serif;
+	color: #4D4D4D;
+	height: 100%;
+	/*padding: 0px;
+*/	
+}
+
 .toolbarStyle {
 	display: flex;
 	background-color: #EAE5E5;
@@ -12,15 +20,18 @@
 
 .name_description{
       padding-right: 60px;
-      margin-left: 182px;
+      margin-left: 15%;
+      margin-top: 15px;
+      /*color:#ff5c33;*/
+      color:#4D4D4D;
 }
 
-body{
-	font-family: 'Noticia Text', serif;
-	color: #4D4D4D;
-	padding: 0px;
-}
 
+
+.extend{
+	min-height: 100%;
+	background-color: #EAE5E5;
+}
 #slogan{
 	font-size: 18px;
 	font-weight: bold;
@@ -30,6 +41,7 @@ body{
 	display: flex;
 	font-size: 15px;
 	align-items: center;
+	margin-top: 10px;
 }
 
 
@@ -43,7 +55,8 @@ body{
 	color: inherit;
 }
 .buttons_style:hover{
-	color: #61D0D4;
+	/*color: #61D0D4;*/
+	color:#ff5c33;
 }
 
 /**/
@@ -51,13 +64,15 @@ body{
 	padding: 10px;
 	cursor:pointer;
 	text-decoration:none;
-	color:#61D0D4; 
+	/*color:#61D0D4; */
+	color: #ff5c33;
 }
 .buttons_style2:visited{
 	color: inherit;
 }
 .buttons_style2:hover{
-	color: #61D0D4;
+	/*color: #61D0D4;*/
+	color: #ff5c33;
 }
 
  
