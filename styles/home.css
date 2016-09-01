@@ -10,14 +10,17 @@
 	max-height: 100%;
 	
 }
-.imageStyle{
+#pictureStyle{
+	flex-shrink:1;
+	margin-left: 15%;
+	margin-top: 80px;
+}
+
+#imageStyle{
 	flex-shrink:1;
 	width:380px;
 	height:380px; 
 	border-radius: 50%;
-	margin-left: 15%;
-	margin-top: 80px;
-
 }
 
 .rightDiv{

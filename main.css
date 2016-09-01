@@ -1,15 +1,18 @@
+/*--- It defines the background color for the whole page, font, etc*/
 html, body{
 	font-family: 'Noticia Text', serif;
 	color: #4D4D4D !important;
 	height: 100%;
 	background-color: #EAE5E5;
-	/*padding: 0px;
-*/	
 }
+
+/*----------------------------   TOOLBAR STYLE   ---------------------------- */
+
+/*--- This removes the default square-ripple effects you click on  an element ---*/
 *:focus {
     outline: none;
 }
-
+/*--- Style for the toolbar ---*/
 .toolbarStyle {
 	display: flex;
 	flex-shrink:1;
@@ -20,27 +23,25 @@ html, body{
 	margin-right: 15%;
 }
 
-#name{
-	font-size: 43px;
-	font-weight: bold;
-}
-
+/*--- Style for the section where my and description show ---*/
 .name_description{
       padding-right: 60px;
       margin-top: 15px;
 	  color: #4D4D4D;
 }
-
-
-
-.extend{
-	min-height: 78%;
-	background-color: #EAE5E5;
+/*--- Style for just my name ---*/
+#name{
+	font-size: 43px;
+	font-weight: bold;
 }
+
+/*--- Style for the test that shows below my name ---*/
 #slogan{
 	font-size: 18px;
 	font-weight: bold;
 }
+
+/*--- Buttons wrapper/container---*/
 
 .buttons_section{
 	display: flex;
@@ -49,37 +50,46 @@ html, body{
 	margin-top: 10px;
 }
 
-
+/*--- ORIGINAL Buttons style ---*/
 .buttons_style{
 	padding: 10px;
 	cursor:pointer;
 	text-decoration:none;
 }
-
+/*--- When a button is visited ---*/
 .buttons_style:visited{
 	color: inherit;
 }
+/*--- When a button is hovered ---*/
 .buttons_style:hover{
-	/*color: #61D0D4;*/
 	color:#ff5c33;
 }
 
-/**/
+/*--- MODIFIED Buttons style for when a button is clicked ---*/
 .buttons_style2{
 	padding: 10px;
 	cursor:pointer;
 	text-decoration:none;
-	/*color:#61D0D4; */
 	color: #ff5c33;
 }
+/*--- When a button is visited ---*/
 .buttons_style2:visited{
 	color: inherit;
 }
+/*--- When a button is hovered ---*/
 .buttons_style2:hover{
 	/*color: #61D0D4;*/
 	color: #ff5c33;
 }
 
+/*-----------------------------   BODY STYLE   ---------------------------- */
+                      /*(where other pages are inserted) */
+.extend{
+	min-height: 78%;
+	background-color: #EAE5E5;
+}
+
+/*----------------------------   FOOTER STYLE   ---------------------------- */
 #footerStyle{
 	display: flex;
 	flex-direction: row;
@@ -88,6 +98,7 @@ html, body{
 	min-height: 8%;
 	background-color:#ff704d;
 	border-bottom: 20px;
+	margin-top: 5px;
 }
 
 #footerWrapper{
