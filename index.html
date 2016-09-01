@@ -11,26 +11,49 @@
 
 
   <!-- Angular module -->
-  <script src="./node_modules/angular/angular.js" type="text/javascript" ></script>
-  <!-- Module for NgRoute -->
-  <script src="node_modules/angular-route/angular-route.js"></script>
-  <!-- Module to use for NgView, Ng-Switch -->
-  <script src="./node_modules/angular-animate/angular-animate.js" type="text/javascript" ></script>
-  <!-- Module for NgClick, NgHide -->
-  <script src="./node_modules/angular-aria/angular-aria.js" type="text/javascript" ></script>
-  <!-- Angular Material module -->
-  <script src="./node_modules/angular-material/angular-material.js" type="text/javascript" ></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" type="text/javascript"></script>
 
+  <!-- Module for NgRoute -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js" type="text/javascript"></script>
+
+  <!-- Module to use for NgView, Ng-Switch, NgAnimate -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js" type="text/javascript"></script>
+
+  <!-- Module for NgClick, NgHide -->
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.js" type="text/javascript"></script>
+
+  <!-- Angular Material module -->
+ <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <!-- Bootstrap stuff (Used for the images carousel under projects section) -->
+        <!-- Latest compiled and minified CSS -->
+     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js" type="text/javascript"></script>
+    
+     <link rel="stylesheet" type="text/css" href="styles/projects.css" />
+       
+
+        <!-- jQuery library -->
+    // <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+        <!-- Latest compiled JavaScript -->
+ <!--    // <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+ <!--  // <script src="./node_modules/bootstrap/js/affix.js" type="text/javascript" ></script>  -->
 
   <!-- My controller -->
-  <script src="mainController.js"></script>
+  <script src="controllers/mainController.js"></script>
       
 
 
   <!-- My CSS stylesheet for Main  -->
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
   <!-- CSS for Home Page -->
-  <link rel="stylesheet" type="text/css" href="components/home.css" />
+  <link rel="stylesheet" type="text/css" href="styles/home.css" />
+ 
+
 
 </head>
 
@@ -47,7 +70,7 @@
          <a id="homeButton" class="buttons_style" ng-click="showHome()"> HOME</a>
          <a id="resumeButton" class="buttons_style" ng-click="showResume()"> RESUME</a>
          <a id="projectsButton" class="buttons_style" ng-click="showProjects()"> PROJECTS</a>
-         <a id="contactButton" class="buttons_style" ng-click="showContact()"> CONTACT</a>  
+         <a id="contactButton" class="buttons_style" ng-click="showSkills()"> SKILLS</a>  
       </section>    
       </div> 
 
@@ -57,9 +80,43 @@
      <!--  <div class="extend"> -->
            <div ng-view class="extend"></div>
    <!--    </div>  -->
-  
+      <footer id="footerStyle">
+
+         <div id="footerWrapper">
+
+            <div id="elementDescription">
+                 <img src="images/email.png" alt="email icon">
+                 <div id="emailText">
+                    <p id="contactStyle"> Contact:</p>
+                    <p id="emailStyle">sirantuan@yahoo.es</p>
+                 </div>   
+
+            </div>
+            
+
+
+            <div id="elementDescription">
+                <img src="images/plus.png" alt="plus icon">
+                 <div id="emailText">
+                    <p id="contactStyle"> Follow me: <br>
+                      <a href={{myTwitter}}><img class="iconHover" src="images/twitter.png" alt="twitter icon"></a>
+                       <a href={{myGitHub}}><img class="iconHover" src="images/github.png" alt="github icon"></a>
+                    </p>
+                 </div> 
+            </div>  
+         </div>  
+
+      </footer>
      
 
 
   </body>
 </html>
+
+<!-- 
+  <script src="./node_modules/angular/angular.js" type="text/javascript" ></script> 
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="./node_modules/angular-animate/angular-animate.js" type="text/javascript" ></script> 
+  <script src="./node_modules/angular-aria/angular-aria.js" type="text/javascript" ></script>
+  <script src="./node_modules/angular-material/angular-material.js" type="text/javascript" ></script>
+ -->

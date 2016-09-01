@@ -1,0 +1,53 @@
+
+/*---Outside wrapper that allows the Box defined below to be centered---*/
+.containerProjects{
+	display: flex;
+	justify-content:flex-start;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+/*---Box that holds all elements---*/
+.centeBox{
+	display: flex;
+	justify-content:flex-start;
+	flex-direction: column;
+}
+/*---For the Projects Title---*/
+#titleProjects{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+hr{
+	background-color: black;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+/*---Horizontal line---*/
+#horizontalLine{
+	color: #4D4D4D;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+/*---Container for just one project, it contains the slide show and description*/
+.oneProjectContainer{
+	display: flex;
+	justify-content:flex-start;
+}
+
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
