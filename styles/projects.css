@@ -18,26 +18,35 @@
 	font-weight: bold;
 }
 
-hr{
+/*#hrstyle{
 	background-color: black;
 	font-weight: bold;
 	margin-top: 2em;
 	margin-bottom: 2em;
+}*/
+
+#Line{
+	background-color: #4D4D4D;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	height: 1px;
+	width: 100%;
 }
+
 /*---Horizontal line---*/
-#horizontalLine{
+/*#horizontalLine{
 	color: #4D4D4D;
 	font-weight: bold;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
-/*---Container for just one project, it contains the slide show and description*/
+---Container for just one project, it contains the slide show and description
 .oneProjectContainer{
 	display: flex;
 	justify-content:flex-start;
-}
+}*/
 
-#slides_control > div{
+/*#slides_control > div{
   height: 200px;
 }
 img{
@@ -50,4 +59,4 @@ img{
   left:50%;
   top:20px;
  margin-left:-200px;
-}
+}*/

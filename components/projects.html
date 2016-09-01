@@ -5,9 +5,21 @@
 	<div class="centerBox">
 		<h1 id="titleProjects"> PROJECTS</h1>
 
-		<hr/>
+		<div id="Line"> </div>
+		
 
 	
+		  <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+         <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     </div>		
 	
