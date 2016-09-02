@@ -1,7 +1,7 @@
 
 'use strict';
 
-    var myapp = angular.module('myWebApp', ['ngRoute', 'ngMaterial', 'ui.bootstrap']);
+    var myapp = angular.module('myWebApp', ['ngRoute', 'ngMaterial', 'ngAnimate','ui.bootstrap']);
 
 
     myapp.config(['$routeProvider',
@@ -34,6 +34,8 @@
             $scope.first_name = 'Nesta Robert Marley';
             $scope.main = {};
             $scope.main.title = 'Nest Robert Marley';
+
+            $scope.pageClass = "containerHome";
 
             $scope.myTwitter = "https://www.twitter.com/tuan26062";
             $scope.myGitHub = "https://www.github.com/tuancaraballo";
@@ -99,6 +101,7 @@
     myapp.controller('home-controller', ['$scope','$location', '$route', '$window',
         function ($scope, $location, $route, $window) {
             console.log("got to Home Controller");
+            $scope.pageClass = 'containerHome';
                  
    }]);
 
@@ -106,6 +109,8 @@
         function ($scope, $location, $route, $window) {
             console.log("got to Project Controller");
 
+
+            $scope.pageClass = 'containerProjects';
             $scope.myInterval = 2000;
             $scope.noWrapSlides = false;
             $scope.active = 0;
@@ -132,12 +137,18 @@
      myapp.controller('resume-controller', ['$scope','$location', '$route', '$window',
         function ($scope, $location, $route, $window) {
             console.log("got to Resume Controller");
+
+            
                  
 }]);
 
      myapp.controller('contact-controller', ['$scope','$location', '$route', '$window',
         function ($scope, $location, $route, $window) {
             console.log("got to project Controller");
+
+
+
+
                  
 }]);
 
