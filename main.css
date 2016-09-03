@@ -19,18 +19,18 @@ html, body{
 .toolbarStyle {
 	display: flex;
 	flex-shrink:1;
-	background-color: #EAE5E5;
-	justify-content: flex-start;
-	min-height: 10%;
+/*	background-color: #EAE5E5;
+	justify-content: center;
 	margin-left: 15%;
-	margin-right: 15%;
+	margin-right: 15%; */
 }
 
 /*--- Style for the section where my and description show ---*/
 .name_description{
-      padding-right: 60px;
+   /*   padding-right: 60px;
       margin-top: 15px;
-	  color: #4D4D4D;
+      margin-right: 50px;*/
+	 /* color: #4D4D4D;*/
 }
 /*--- Style for just my name ---*/
 #name{

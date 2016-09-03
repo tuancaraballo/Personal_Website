@@ -1,6 +1,94 @@
-<section class="containerProjects">
+<section class="containerResume">
 
-	<h1 id="titleProjects"> RESUME </h1>
+<!-- DISCLAIMER: see resume.css to see the rationale behind my containers -->
+	<!-- <section class="centerBox">   --> 
+	<h1 id="titleProjects"> RESUME</h1> 
+	<!-- horizontal -->
+	<section class="containerForInformationVsSkills">
+		<!-- Vertical orientation for line break and resume Text Info -->
+		<section class="resumeSectionContainer">
+			
 
+			<section ng-repeat="dataSet in resumeDataSet">  
+				<div id="Line1"> </div>
+
+				<section class="circleAndTextContainer">
+				
+					<div class="titleCircle-Resume">
+						{{dataSet.sectionTitle}}
+					</div>
+
+					<section class="containerForText">
+						<section ng-repeat="job in dataSet.data">
+							<h4>{{job.title}}</h4>
+							<p class= "resumeTextFont"> {{job.description}} </p>
+						</section>
+					</section>	
+
+					<!-- <section id="major">
+						<h4> B.S., Computer Science </h4>  
+						<h5>  Stanford University  2018<h5><h4> 				
+					</section> -->	
+		
+				</section>
+
+			 </section>
+
+		<!-- 	<div id="Line1"> </div>	
+		
+			<section class="circleAndTextContainer">	
+		
+				<div class="titleCircle-Resume">
+					Work Experience
+				</div>
+        
+            	<section class="containerForText">
+					<section ng-repeat="job in jobsList">
+						<h4>{{job.title}}</h4>
+						<p class= "resumeTextFont"> {{job.description}} </p>
+					</section>
+				</section>	
+
+	   		 </section>
+
+  			<div id="Line1"> </div>
+	    
+	    	<section class="circleAndTextContainer">
+
+				<div class="titleCircle-Resume">
+					Public Service
+				</div>
+				
+				<section class="containerForText">
+					<section >
+						<h4> Cuba Emprende </h4>
+						<p class="resumeTextFont"> I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself. </p>
+					</section>	
+				</section>	
+
+	    	</section>	
+
+		</section>
+ -->
+      </section>
 	
-<section>
+        <section>
+        	<img class="iconHover" src="icons/book50.png" alt="github icon">
+        	<h4>Technical Skills</h4>
+        	<section class="resumeTextFont">
+        		<span > Android Development</span>
+        		<span> Web Development </span>
+        		<span> Object Oriented Programming </span>
+        		<span> Angular Material </span>
+        	</section>	
+
+        </section>
+        
+	</section>
+	
+</section>
+
+<!-- <section id="major">
+						<h4> B.S., Computer Science </h4>  
+						<h5>  Stanford University 2018<h5><h4> 				
+					</section>	 -->

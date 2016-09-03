@@ -1,0 +1,139 @@
+
+
+
+/*  
+ ContainerResume:
+   |		    Content: 2 sections:  RESUME TITLE and ContainerInfoNSkills;
+   |		Orientation: vertically
+   |
+   |- - - RESUME
+   |
+   |- - - ContainerInfoNSkills:
+	    |		       Content: 2 sections: resumeSectionContainer and Skills;  
+		|		   Orientation: horizontally
+    	|
+   		|- - - resumeSectionContainer:
+   	    |	     |        Content: 2 sections: Line Break and CircleAndText;
+   		|        |    Orientation: vertical
+        |        | 
+        |        |- - -  LINE BREAK
+        |		 |
+        |		 |- - -  CircleAndText: 
+        |		 		|  	        Content: 2 sections: Circle and text;
+        |				|       Orientation: horizontal
+        |				|
+		|				|- - - Circle:
+		|				|			 Content: 1 section, just the circle, no orientation  requireed;
+        |				|		 Orientation: don't add CSS style for orientation since it's only a div;
+        |		    	|	
+        |               |
+        |		        |- - - TEXT:
+        |					         Content: 1 section, just text
+        |					     Orientation: vertically
+        |       
+        |- - - SKILLS
+        	       	Content: 1 section;
+        	    Orientation: vertically;
+ */
+
+.containerResume{
+	display: flex;
+	/*justify-content:flex-start;*/
+	justify-content:center;
+	flex-direction: column;
+	margin-left: 15%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+	/*min-width: 100%;*/
+}
+
+/*--- Container that holds the information section on the left
+      and the skills section on the right*/
+.containerForInformationVsSkills{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	
+}
+
+.resumeSectionContainer{
+	display: flex;
+	margin-right: 3em;
+/*	justify-content: flex-start;*/
+	flex-direction: column;
+}
+
+/*--- Container that contains  the Circle and the Text horizontally ---*/
+.circleAndTextContainer{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.containerForText{
+	display: flex;
+	flex-direction: column;
+	max-width: 80%;
+	margin-left: 2em;
+	/*margin-right: 3em;*/
+}
+
+
+
+
+
+/*--- Container that contains just the text vertically ---*/
+.containerForJobDescription{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.skillsContainer{
+	display: flex;
+	margin-top: 20px;
+	flex-direction: vertical;
+	align-self: center;
+
+}
+
+
+.titleCircle-Resume{
+   background-color: #FF704D;
+   width: 120px !important;
+   height: 120px !important; 
+   border-radius: 50% !important;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 120px;
+   color: white;
+   text-decoration: bold;
+}
+
+
+
+
+.jobInfo{
+	display: flex;
+	flex-direction: column;
+	max-width: 80%;
+	margin-left: 4em;
+}
+
+#major{
+	display: flex;
+	flex-direction: column;
+	max-width: 80%;
+	margin-left: 2em;
+	margin-top: 2%;
+}
+.listJobsVertically{
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+	margin-left: 4em;
+}
+
+.resumeTextFont{
+	font-size: 13px;
+}
