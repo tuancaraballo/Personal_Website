@@ -27,6 +27,8 @@
                 });
         }]);
 
+
+
     myapp.controller('MainController', ['$scope', '$route', '$http', '$window', '$location',
         function ($scope, $route, $http, $window, $location) {
             console.log("got to Controller");
@@ -111,7 +113,7 @@
 
 
             $scope.pageClass = 'containerProjects';
-            $scope.myInterval = 2000;
+            $scope.myInterval = 10000;
             $scope.noWrapSlides = false;
             $scope.active = 0;
   
@@ -191,6 +193,11 @@
                     }
 
                ];
+
+               $scope.skills = ['Android Development', 'Responsive Design','Web Development', ' Object Oriented Programming ', 'Angular Material',
+               'Bootstrap', 'NodeJS', 'ExpressJS', 'MongoDB'
+               ];
+
 
 
                

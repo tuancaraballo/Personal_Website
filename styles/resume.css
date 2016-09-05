@@ -42,7 +42,7 @@
 	justify-content:center;
 	flex-direction: column;
 	margin-left: 15%;
-	margin-right: 10%;
+	margin-right: 6%;
 	margin-bottom: 10%;
 	/*min-width: 100%;*/
 }
@@ -110,8 +110,10 @@
    text-decoration: bold;
 }
 
-
-
+/*li {
+    float:left; 
+}
+*/
 
 .jobInfo{
 	display: flex;
