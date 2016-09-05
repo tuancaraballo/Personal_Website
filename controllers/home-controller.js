@@ -1,6 +1,6 @@
- app.controller('home-controller', ['$scope','$location', '$route', '$window',
+   myapp.controller('home-controller', ['$scope','$location', '$route', '$window',
         function ($scope, $location, $route, $window) {
-            console.log("got to HOME Controller");
-
-                  
-}]);
+            console.log("got to Home Controller");
+            $scope.pageClass = 'containerHome';
+                 
+   }]);
