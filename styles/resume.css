@@ -42,8 +42,9 @@
 	justify-content:center;
 	flex-direction: column;
 	margin-left: 15%;
-	margin-right: 6%;
+	margin-right: 5%;
 	margin-bottom: 10%;
+	splay: flex;
 	/*min-width: 100%;*/
 }
 
@@ -53,15 +54,18 @@
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
+
 	
 }
 
 .resumeSectionContainer{
-	display: flex;
-	margin-right: 3em;
+	max-width: 80%;
 /*	justify-content: flex-start;*/
 	flex-direction: column;
+	margin-right: 5em;
 }
+
+
 
 /*--- Container that contains  the Circle and the Text horizontally ---*/
 .circleAndTextContainer{
@@ -139,3 +143,19 @@
 .resumeTextFont{
 	font-size: 13px;
 }
+ul.no_bullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+font-size: 13px;
+}
+li.android{
+
+    margin: 10px 0; /* not needed, just to add space between the li's */
+    background: url('/icons/android15.png') no-repeat left center;
+    list-style: none; /* Get rid of the default bullet points */
+    padding-left: 25px; /* Offsets the text. Needs to be at least the width of your image */
+    line-height: 20px; /* Might have to play with this value a bit */
+
+}
+
