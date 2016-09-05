@@ -194,15 +194,41 @@
 
                ];
 
-               $scope.skills = ['Android Development', 'Responsive Design','Web Development', ' Object Oriented Programming ', 'Angular Material',
-               'Bootstrap', 'NodeJS', 'ExpressJS', 'MongoDB'
-               ];
-
-
-
-               
-
-            
+               $scope.skills = [
+                    {
+                        title: 'Android Development',
+                          url: '/icons/android15.png' 
+                    },
+                      {
+                        title: 'Responsive Design',
+                          url: '/icons/responsive.png' 
+                    },
+                    {
+                        title: 'Web Development',
+                          url: '/icons/web.png' 
+                    },
+                      {
+                        title: 'Object Oriented Programming',
+                          url: '/icons/oop.png' 
+                    },
+                    {
+                        title: 'Angular',
+                          url: '/icons/angularjs.png' 
+                    },
+                    {
+                        title: 'Bootstrap',
+                          url: '/icons/bootstrap.png' 
+                    },
+                     {
+                        title: 'NodeJS',
+                          url: '/icons/nodejs.png' 
+                    },
+                    {
+                        title: 'MongoDB',
+                          url: '/icons/mongodb.png' 
+                    }
+                ];
+          
                  
 }]);
 

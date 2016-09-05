@@ -73,35 +73,16 @@
 	flex-direction: row;
 }
 
-
+/*--- Container for the Text Description ---*/
 .containerForText{
 	display: flex;
 	flex-direction: column;
 	max-width: 80%;
 	margin-left: 2em;
-	/*margin-right: 3em;*/
 }
 
 
-
-
-
-/*--- Container that contains just the text vertically ---*/
-.containerForJobDescription{
-	display: flex;
-	flex-direction: column;
-}
-
-
-.skillsContainer{
-	display: flex;
-	margin-top: 20px;
-	flex-direction: vertical;
-	align-self: center;
-
-}
-
-
+/*--- Orange Circle that embeds the titles ---*/
 .titleCircle-Resume{
    background-color: #FF704D;
    width: 120px !important;
@@ -114,45 +95,16 @@
    text-decoration: bold;
 }
 
-/*li {
-    float:left; 
-}
-*/
 
-.jobInfo{
-	display: flex;
-	flex-direction: column;
-	max-width: 80%;
-	margin-left: 4em;
-}
-
-#major{
-	display: flex;
-	flex-direction: column;
-	max-width: 80%;
-	margin-left: 2em;
-	margin-top: 2%;
-}
-.listJobsVertically{
-	display: flex;
-	flex-direction: column;
-	max-width: 40%;
-	margin-left: 4em;
-}
-
-.resumeTextFont{
+/*--- Removes the bullet from default, for the list ---*/
+ul.no_bullet {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 	font-size: 13px;
 }
-ul.no_bullet {
-list-style-type: none;
-padding: 0;
-margin: 0;
-font-size: 13px;
-}
-li.android{
-
+li.icons{
     margin: 10px 0; /* not needed, just to add space between the li's */
-    background: url('/icons/android15.png') no-repeat left center;
     list-style: none; /* Get rid of the default bullet points */
     padding-left: 25px; /* Offsets the text. Needs to be at least the width of your image */
     line-height: 20px; /* Might have to play with this value a bit */
