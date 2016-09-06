@@ -8,22 +8,6 @@
 
                                          <!-- DEPENDENCIES -->
 
-    
-
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCKZdCvs-txHoE86LaRXN7O6HypomPDmfM",
-    authDomain: "personalwebsite-23500.firebaseapp.com",
-    databaseURL: "https://personalwebsite-23500.firebaseio.com",
-    storageBucket: "personalwebsite-23500.appspot.com",
-  };
-  firebase.initializeApp(config);
-</script>
-
-
-
      <!-- Angular module -->
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" type="text/javascript"></script>
 
@@ -56,6 +40,8 @@
    
      <!-- Font used across my website -->
      <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+     <!--  Font Ubuntu Mono for the Linux Portion -->
+     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
     
      <!-- My CSS stylesheet for Main  -->
      <link rel="stylesheet" type="text/css" href="styles/main.css" />
@@ -63,6 +49,8 @@
      <link rel="stylesheet" type="text/css" href="styles/home.css" />
      <!--  CSS for Resume Page -->
       <link rel="stylesheet" type="text/css" href="styles/resume.css" />
+      <!-- CSS for About Page -->
+      <link rel="stylesheet" type="text/css" href="styles/about.css" />
                 
 
                                        <!-- CONTROLLERS -->
@@ -70,7 +58,7 @@
      <script src="controllers/mainController.js"></script>
      <!-- Partial Controllers -->
      <script src="controllers/resume-controller.js"></script>
-     <script src="controllers/misc-controller.js"></script>
+     <script src="controllers/about-controller.js"></script>
       <script src="controllers/projects-controller.js"></script>
       <script src="controllers/home-controller.js"></script>
   
@@ -81,7 +69,7 @@
       <div class="toolbarStyle"> 
         <section  flex layout="row" class="name_description">  
           <span id="name"> {{first_name}}</span> <br>
-          <span id="slogan"> Programmer, chess player</span>
+          <span id="slogan"> Programmer and salsa dancer</span>
         </section>
          <!-- layout-sm="row" -->
         <section  flex layout="row"  class="buttons_section"> 

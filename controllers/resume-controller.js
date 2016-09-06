@@ -106,7 +106,7 @@ myapp.controller('resume-controller', ['$scope','$location', '$route', '$window'
       },
       {
                title: 'C++',
-                 url: '/icons/c++.png' 
+                 url: '/icons/cpp.png' 
       },
       {
                title: 'Javascript',
