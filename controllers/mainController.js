@@ -23,6 +23,9 @@
                     templateUrl: '/components/projects.html',
                     controller: 'projects-controller'
                 }).
+                when('/resumePDF', {
+                    templateUrl: '/components/resume.pdf'
+                }).
                 otherwise({
                     redirectTo: '/home'
                 });

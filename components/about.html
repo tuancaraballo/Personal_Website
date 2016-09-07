@@ -30,10 +30,12 @@
 <p class ="sty" id="sixth"> You can find the source code in my <a class="blue" href="https://www.github.com/tuancaraballo">GitHub</a></p>
 <p class ="sty" id="sixth"> You can type: "cat RESUME" to see my Resume or "cd mywebsite" to find out more about me</p>
 <p class ="sty" id="sixth"> Thank you for visiting :-) </p>
-<p class ="sty" id="sixth"> <input id="textarea"  autofocus type="text" name="fname"> </p> 
+<p class ="sty" id="sixth"> <input ng-model="command" id="textarea" ng-keydown="route($event)" autofocus type="text"> </p> 
+ <p style="color:white;" ng-bind="command"> </p>
+
 </div>
 
-<!-- 
+<!-- ng-enter="route(command)"
 
 <script>
   document.getElementById("textarea").focus();
