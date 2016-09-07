@@ -40,7 +40,7 @@
    
      <!-- Font used across my website -->
      <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
-     <!--  Font Ubuntu Mono for the Linux Portion -->
+     <!--  Font Ubuntu Mono for the Linux -->
      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
     
      <!-- My CSS stylesheet for Main  -->
@@ -66,7 +66,7 @@
 
    <body>
       
-      <div class="toolbarStyle"> 
+      <div ng-hide="linux" class="toolbarStyle"> 
         <section  flex layout="row" class="name_description">  
           <span id="name"> {{first_name}}</span> <br>
           <span id="slogan"> Programmer and salsa dancer</span>
@@ -83,7 +83,7 @@
       </div>
       <main ng-view class= "extend {{pageClass}}" ></main>
         
-      <footer id="footerStyle">
+      <footer ng-hide="linux" id="footerStyle">
 
         <section id="footerWrapper">
 

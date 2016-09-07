@@ -11,7 +11,7 @@
                     templateUrl: '/components/home.html',
                     controller: 'home-controller'
                 }).
-                 when('/contact', {
+                 when('/about', {
                     templateUrl: '/components/about.html',
                     controller: 'about-controller'
                 }).
@@ -27,19 +27,22 @@
                     templateUrl: '/components/resume.pdf'
                 }).
                 otherwise({
-                    redirectTo: '/home'
+                    redirectTo: '/about'
                 });
         }]);
 
 
 
-    myapp.controller('MainController', ['$scope', '$route', '$http', '$window', '$location',
-        function ($scope, $route, $http, $window, $location) {
+    myapp.controller('MainController', ['$scope', '$route', '$http', '$window', '$location', '$rootScope',
+        function ($scope, $route, $http, $window, $location, $rootScope) {
             console.log("got to Controller");
 
             $scope.first_name = 'Tuan Anh Tran Caraballo';
             $scope.main = {};
             $scope.main.title = 'Tuan Anh Tran Caraballo';
+
+
+            $rootScope.linux = true;
 
             $scope.pageClass = "containerHome";
 
