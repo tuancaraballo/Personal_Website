@@ -1,5 +1,5 @@
 
-<div class="about">
+<div class="containerAbout">
 	<p class ="sty" id="first"> tranc26061.0$ login </p>
 	<p class="sty" id="second">  Username: tuan2606 </p> 
   	<p class ="sty" id="third">Password: ******* </p>
@@ -13,6 +13,10 @@
 	<p class ="sty" id="sixth"> You can type: "cat RESUME" to see my Resume or "cd mywebsite" to find out more about me</p>
 	<p class ="sty" id="sixth"> Thank you for visiting :-) </p>
 	<p class ="sty" id="sixth"> <input ng-model="command" id="textarea" ng-keydown="route($event)" autofocus type="text"> </p> 
-<div ng-if="incorrectInput" style="color:white;"> Incorrect input </div>
+	<div ng-if="incorrectInput" style="color:red;"> Command not found, Please type on of the following commands: 
+		<ul>
+			<li> cat resume</li>
+			<li> cd mywebsite</li>
+ 	</div>
 </div>
  

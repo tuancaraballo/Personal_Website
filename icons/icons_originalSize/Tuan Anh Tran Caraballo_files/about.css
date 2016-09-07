@@ -13,14 +13,10 @@
 }
 
 .containerAbout.ng-leave{
-	-webkit-animation:fadeout 1s both ease-out;
-	-moz-animation:fadeout 1s both ease-out;
-	animation:fadeout 1s both ease-out;   
+	-webkit-animation:fadeout 2s both ease-out;
+	-moz-animation:fadeout 2s both ease-out;
+	animation:fadeout 2s both ease-out;   
 }
-
-
-
-
 
 /*.containerAbout.ng-leave.ng-leave{
 	-webkit-animation:fadeout 1.5s both ease-out;

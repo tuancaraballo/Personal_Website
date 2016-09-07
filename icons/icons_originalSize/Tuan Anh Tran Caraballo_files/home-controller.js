@@ -3,5 +3,4 @@
             console.log("got to Home Controller");
           
              $rootScope.linux = false;
-             $scope.pageClass = "containerHome";
    }]);

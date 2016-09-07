@@ -25,9 +25,9 @@
 
 
 .containerHome.ng-enter {
-	-webkit-animation:fadein 1s both ease-in;
-	-moz-animation:fadein 1s both ease-in;
-	animation:fadein 1s both ease-in;   
+	-webkit-animation:fadein 2s both ease-in;
+	-moz-animation:fadein 2s both ease-in;
+	animation:fadein 2s both ease-in;   
 }
 
 /* The finishing CSS styles for the enter animation 
