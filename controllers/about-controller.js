@@ -2,10 +2,9 @@ myapp.controller('about-controller', ['$scope','$location', '$route', '$window',
         function ($scope, $location, $route, $window, $rootScope) {
             console.log("got to project Controller");
   			$scope.pageClass = 'containerEntrance';
-             console.log("the command: " +  $scope.command);
-           
-            $scope.route = function(event){
+            console.log("the command: " +  $scope.command);
 
+            $scope.route = function(event){
             	 if(event.keyCode == 13) {  
             	 	console.log("Then event was enter");
             	 	console.log("command was " + $scope.command);

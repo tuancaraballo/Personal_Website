@@ -11,10 +11,12 @@ html, body{
 }
 
 .toolbarStyle {
+	background-color: #EAE5E5;
 	display: flex;
 	flex-shrink:1;
-	background-color: #EAE5E5;
-	justify-content: flex-start;
+	flex-direction: row;	
+	justify-content: center;
+	flex-wrap: wrap;
 	min-height: 10%;
 	margin-left: 15%;
 	margin-right: 15%;
