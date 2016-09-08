@@ -1,0 +1,149 @@
+.containerEntrance{
+  background: #000;
+  padding-top: 10px;
+  color: lime; 
+  min-width: 100%;
+  height:100vh;
+} 
+
+.containerEntrance.ng-enter{
+	-webkit-animation:fadein 1.5s both ease-in;
+	-moz-animation:fadein 1.5s both ease-in;
+	animation:fadein 1.5s both ease-in;   
+}
+
+.containerEntrance.ng-leave{
+	-webkit-animation:fadeout 1s both ease-out;
+	-moz-animation:fadeout 1s both ease-out;
+	animation:fadeout 1s both ease-out;   
+}
+
+
+
+
+
+/*.containerAbout.ng-leave.ng-leave{
+	-webkit-animation:fadeout 1.5s both ease-out;
+	-moz-animation:fadeout 1.5s both ease-out;
+	animation:fadeout 1.5s both ease-out;   
+}*/
+
+
+.sty{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 52em;
+ 
+}
+
+#first {
+   animation: type2 4s steps(60, end); 
+}
+
+#second{
+  animation: type2 8s steps(60, end);
+}
+
+#username{
+  animation: type2 8s steps(60, end);
+}
+
+
+#third{
+   animation: type2 12s steps(100, end);
+}
+
+#fourth{
+   animation: type2 9s steps(1, end);
+}
+
+#fifth{
+   animation: type2 19s steps(100, end);
+}
+#sixth{
+   animation: type2 12.5s steps(1, end);
+}
+
+#seventh{
+  animation: type2 12.5s steps(1, end);
+}
+
+.blue{
+	color: blue;
+}
+
+.red{
+	color: red;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+#textarea{
+   border:black; 
+   background-color: black;
+  color: lime;
+  font-family: "Courier";
+  font-size: 20px;
+   outline: none;
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+}  
+ 
+@keyframes blink{
+  0%{opacity: .0;}
+}
+
+
+
+
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+::selection{
+  background: black;
+}

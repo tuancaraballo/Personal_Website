@@ -1,7 +1,7 @@
-myapp.controller('about-controller', ['$scope','$location', '$route', '$window', '$rootScope',
+myapp.controller('entrance-controller', ['$scope','$location', '$route', '$window', '$rootScope',
         function ($scope, $location, $route, $window, $rootScope) {
             console.log("got to project Controller");
-  			$scope.pageClass = 'containerEntrance';
+  			$scope.pageClass = 'containerAbout';
              console.log("the command: " +  $scope.command);
            
             $scope.route = function(event){

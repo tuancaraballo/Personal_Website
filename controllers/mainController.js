@@ -7,6 +7,10 @@
     myapp.config(['$routeProvider',
         function ($routeProvider) {
             $routeProvider.
+                when('/entrance', {
+                    templateUrl: '/components/entrance.html',
+                    controller: 'entrance-controller'
+                }).
                 when('/home', {
                     templateUrl: '/components/home.html',
                     controller: 'home-controller'
@@ -25,9 +29,9 @@
                 }).
                 when('/resumePDF', {
                     templateUrl: '/components/resume.pdf'
-                }).
+                }).             
                 otherwise({
-                    redirectTo: '/about'
+                    redirectTo: '/entrance'
                 });
         }]);
 
