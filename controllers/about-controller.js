@@ -14,7 +14,7 @@ myapp.controller('about-controller', ['$scope','$location', '$route', '$window',
             	 if(event.keyCode == 13) {  
             	 	console.log("Then event was enter");
             	 	console.log("command was " + $scope.command);
-            	 	if($scope.command == "cd mywebsite"){
+            	 	if($scope.command == "cd mysite"){
             			console.log("The command is: " + $scope.command);        			
      					console.log("About-controller, linux should be true " + $scope.linux);
             			$rootScope.linux = false;
