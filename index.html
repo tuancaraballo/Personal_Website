@@ -69,13 +69,12 @@
    <body>
       
       <div ng-hide="linux" class="toolbarStyle"> 
-        <section  flex layout="row" class="name_description">  
+        <section id="name_slogan_container">  
           <span id="name"> {{first_name}}</span> <br>
           <span id="slogan"> Programmer and salsa dancer</span>
         </section>
-         <!-- layout-sm="row" -->
-        <section  flex layout="row"  class="buttons_section"> 
-          <!-- Note:  Using id, so that I can change the color of the button to blue when active and back to black when inactive -->
+        <!-- Note: Using id, so that I can change the their color when they are active/inactive -->
+        <section  class="buttons_section"> 
           <a id="homeButton" class="buttons_style" ng-click="showHome()"> HOME</a>
           <a id="resumeButton" class="buttons_style" ng-click="showResume()"> RESUME</a>
           <a id="projectsButton" class="buttons_style" ng-click="showProjects()"> PROJECTS</a>
@@ -86,9 +85,9 @@
         
       <footer ng-hide="linux" id="footerStyle">
 
-        <section id="footerWrapper">
+    <!--     <section id="footerWrapper"> -->
 
-          <section id="elementDescription">
+          <section class="footerElementContainer">
                   
             <img src="images/email.png" alt="email icon">
                   
@@ -99,7 +98,7 @@
 
           </section>
               
-          <section id="elementDescription">
+          <section class="footerElementContainer">
             <img src="images/plus.png" alt="plus icon">
             <div id="emailText">
               <p id="contactStyle"> Follow me: <br>
@@ -108,7 +107,7 @@
               </p>
             </div> 
           </section> 
-        </section>  
+      <!--   </section>   -->
       </footer>     
     </body>
   </html>

@@ -3,15 +3,14 @@ html, body{
 	color: #4D4D4D !important;
 	height: 100%;
 	background-color: #EAE5E5;
-	/*padding: 0px;
-*/	
 }
+
+/*-- Disables the ripple effect when you click on a button --*/
 *:focus {
     outline: none;
 }
-
+/*-- Toolbar --*/
 .toolbarStyle {
-	background-color: #EAE5E5;
 	display: flex;
 	flex-shrink:1;
 	flex-direction: row;	
@@ -23,39 +22,34 @@ html, body{
 	margin-top: 1.5%;
 }
 
+/*-- Name and slogan container --*/
+#name_slogan_container{
+    margin-right: 10%;
+}
 
+/*-- My name --*/
 #name{
-	font-size: 43px;
+	font-size: 300%;
 	font-weight: bold;
 }
-
-.name_description{
-      padding-right: 60px;
-      margin-top: 15px;
-	  color: #4D4D4D;
-}
-
-
-
-.extend{
-	min-height: 78%;
-	background-color: #EAE5E5;
-}
+/*-- Programmer and salsa dancer --*/
 #slogan{
-	font-size: 18px;
+	font-size: 130%;
 	font-weight: bold;
 }
 
+
+/*-- Buttons section style --*/
 .buttons_section{
 	display: flex;
-	font-size: 15px;
+	font-size: 98%;
 	align-items: center;
-	margin-top: 10px;
+	margin-top: 2%;
 }
 
-
+/*--  Styles for buttons when they are inactive --*/
 .buttons_style{
-	padding: 10px;
+	padding: 4%;
 	cursor:pointer;
 	text-decoration:none;
 }
@@ -64,26 +58,33 @@ html, body{
 	color: inherit;
 }
 .buttons_style:hover{
-	/*color: #61D0D4;*/
 	color:#ff5c33;
 }
 
-/**/
+/*-- Styles for buttons when they are active --*/
 .buttons_style2{
-	padding: 10px;
+	padding: 4%;
 	cursor:pointer;
 	text-decoration:none;
-	/*color:#61D0D4; */
 	color: #ff5c33;
 }
 .buttons_style2:visited{
 	color: inherit;
 }
 .buttons_style2:hover{
-	/*color: #61D0D4;*/
 	color: #ff5c33;
 }
 
+
+
+/*-- This is the ngView that includes the other pages --*/
+.extend{
+	min-height: 78%;
+}
+
+
+
+/*-- Footer style, --*/
 #footerStyle{
 	display: flex;
 	flex-direction: row;
@@ -91,41 +92,48 @@ html, body{
 	align-items:center;
 	min-height: 8%;
 	background-color:#ff704d;
-	border-bottom: 20px;
+	/*border-bottom: 20px;*/
 }
-
+/*
 #footerWrapper{
 	display: flex;
 	flex-direction: row;
-}
+}*/
 
-#elementDescription{
+/*-- Container for Email of Twittter/Github --*/
+.footerElementContainer{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	color: white;
 }
+
+/*-- Email shown on the text area --*/
 #emailText{
 	display: flex;
-	margin-left: 5px;
+	margin-left: 1%;
 	flex-direction: column;
 	margin-right: 30px;
 }
-
+/*-- Contact style container used to embed the plus sign plus twitter --*/
+/*-- or the email icon plus the email itslef --*/
 #contactStyle{
-	font-size: 12px;
+	font-size: 80%;
 	font-weight: bold;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	border-bottom: 0px;
 }
+/*-- Style specificaly for the email portion --*/
 #emailStyle{
 	padding-top: 0px;
 	margin-top: 0px;
 	border-top: 0px;
-	font-size: 10px;
+	font-size: 80%;
 }
+
+/*-- Icons hover style--*/
 .iconHover:hover{
 	cursor: pointer;
 }
