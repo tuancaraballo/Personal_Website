@@ -121,14 +121,14 @@ h1{
 	cursor: pointer;
 	background-color: #ff704d;
 	float: left;
-	width:130px;
+	width: 130px;
 	height:130px; 
 	border-radius: 50%;
 	color: white;
 	margin: 10px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 130px
+	line-height: 130px;
 }
 
 /*-- Hover --*/
