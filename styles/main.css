@@ -17,14 +17,14 @@ html, body{
 	justify-content: center;
 	flex-wrap: wrap;
 	min-height: 10%;
-	margin-left: 15%;
-	margin-right: 15%;
+/*	margin-left: 15%;
+	margin-right: 15%;*/
 	margin-top: 1.5%;
 }
 
 /*-- Name and slogan container --*/
 #name_slogan_container{
-    margin-right: 10%;
+    margin-right: 8%;
 }
 
 /*-- My name --*/
@@ -43,15 +43,17 @@ html, body{
 .buttons_section{
 	display: flex;
 	font-size: 98%;
+	justify-content: flex-start;
 	align-items: center;
-	margin-top: 2%;
+	/*margin-top: 2%;*/
 }
 
 /*--  Styles for buttons when they are inactive --*/
 .buttons_style{
-	padding: 4%;
+	padding: 5%;
 	cursor:pointer;
-	text-decoration:none;
+	font-size: 108%;
+/*	text-decoration:none;*/
 }
 
 .buttons_style:visited{
@@ -65,7 +67,7 @@ html, body{
 .buttons_style2{
 	padding: 4%;
 	cursor:pointer;
-	text-decoration:none;
+/*	text-decoration:none;*/
 	color: #ff5c33;
 }
 .buttons_style2:visited{

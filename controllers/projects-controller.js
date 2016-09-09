@@ -3,7 +3,7 @@
             console.log("got to Project Controller");
 
             $rootScope.linux = false;
-            $scope.pageClass = 'containerProjects';
+            $scope.pageClass = '.containerProjects';
             $scope.myInterval = 10000;
             $scope.noWrapSlides = false;
             $scope.active = 0;
