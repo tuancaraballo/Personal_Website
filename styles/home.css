@@ -6,6 +6,8 @@
 	justify-content: center;
 	min-width: 100%;
 	margin-right: 15%;
+	flex-shrink: 1;
+	flex-grow: 1;
 	
 }
 
