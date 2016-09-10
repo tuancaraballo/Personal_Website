@@ -117,7 +117,7 @@
 
 .resumeSectionContainer{
 	max-width: 80%;
-/*	justify-content: flex-start;*/
+	justify-content: flex-start;
 	flex-direction: column;
 	margin-right: 5em;
 }
@@ -127,13 +127,16 @@
 /*--- Container that contains  the Circle and the Text horizontally ---*/
 .circleAndTextContainer{
 	display: flex;
+  flex-wrap: wrap;
 	flex-direction: row;
+  justify-content: center;
 }
 
 /*--- Container for the Text Description ---*/
 .containerForText{
 	display: flex;
 	flex-direction: column;
+  flex-wrap: wrap;
 	max-width: 80%;
 	margin-left: 2em;
 }

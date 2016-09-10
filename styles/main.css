@@ -1,4 +1,9 @@
-html, body{
+html{
+	height: 100%;
+	background-color: #EAE5E5;
+}
+
+body{
 	font-family: 'Noticia Text', serif;
 	color: #4D4D4D !important;
 	height: 100%;
@@ -12,14 +17,14 @@ html, body{
 /*-- Toolbar --*/
 .toolbarStyle {
 	display: flex;
-	flex-shrink:1;
+	/*flex-shrink:1;*/
 	flex-direction: row;	
 	justify-content: center;
 	flex-wrap: wrap;
 	min-height: 10%;
-	margin-left: 15%;
-	margin-right: 15%;
 	margin-top: 1.5%;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 /*-- Name and slogan container --*/
@@ -43,9 +48,10 @@ html, body{
 .buttons_section{
 	display: flex;
 	font-size: 98%;
-	justify-content: flex-start;
+	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	/*margin-top: 2%;*/
+/*	margin-top: 2%;*/
 }
 
 /*--  Styles for buttons when they are inactive --*/
@@ -120,7 +126,7 @@ html, body{
 }
 /*-- Contact style container used to embed the plus sign plus twitter --*/
 /*-- or the email icon plus the email itslef --*/
-#contactStyle{
+.contactStyle{
 	font-size: 80%;
 	font-weight: bold;
 	margin-bottom: 0px;

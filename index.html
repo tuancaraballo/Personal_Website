@@ -1,10 +1,11 @@
 <!doctype html>
-  <html lang="en-US" ng-app="myWebApp" ng-controller="MainController">
+  <html lang="en-US">
    <head>
      <meta charset="UTF-8">
-     <title> {{first_name}} </title>
+     <title> Tuan Anh Tran Caraballo </title>
 
-     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+     <link rel='shortcut icon' href='favicon.ico'/>
+     <!-- type='image/x-icon' -->
 
                                          <!-- DEPENDENCIES -->
 
@@ -66,20 +67,20 @@
   
    </head>
 
-   <body>
+   <body ng-app="myWebApp" ng-controller="MainController">
       
       <div ng-hide="linux" class="toolbarStyle"> 
-        <section id="name_slogan_container">  
+        <div id="name_slogan_container">  
           <span id="name"> {{first_name}}</span> <br>
           <span id="slogan"> Programmer and salsa dancer</span>
-        </section>
+        </div>
         <!-- Note: Using id, so that I can change the their color when they are active/inactive -->
-        <section  class="buttons_section"> 
+        <div  class="buttons_section"> 
           <a id="homeButton" class="buttons_style" ng-click="showHome()"> HOME</a>
           <a id="resumeButton" class="buttons_style" ng-click="showResume()"> RESUME</a>
           <a id="projectsButton" class="buttons_style" ng-click="showProjects()"> PROJECTS</a>
           <a id="contactButton" class="buttons_style" ng-click="showSkills()"> MORE</a>  
-        </section> 
+        </div> 
       </div>
       <main ng-view class= "extend {{pageClass}}" ></main>
         
@@ -87,26 +88,26 @@
 
     <!--     <section id="footerWrapper"> -->
 
-          <section class="footerElementContainer">
+          <div class="footerElementContainer">
                   
             <img src="images/email.png" alt="email icon">
                   
-            <section id="emailText">
-              <p id="contactStyle"> Contact:</p>
+            <div id="emailText">
+              <p class="contactStyle"> Contact:</p>
               <p id="emailStyle">tranc2606@gmail.com</p>
-            </section>   
+            </div>   
 
-          </section>
+          </div>
               
-          <section class="footerElementContainer">
+          <div class="footerElementContainer">
             <img src="images/plus.png" alt="plus icon">
             <div id="emailText">
-              <p id="contactStyle"> Follow me: <br>
+              <p class="contactStyle"> Follow me: <br>
                 <a href={{myTwitter}}><img class="iconHover" src="images/twitter.png" alt="twitter icon"></a>
                 <a href={{myGitHub}}><img class="iconHover" src="images/github.png" alt="github icon"></a>
               </p>
             </div> 
-          </section> 
+          </div> 
       <!--   </section>   -->
       </footer>     
     </body>
