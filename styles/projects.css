@@ -85,8 +85,10 @@
 
 /*--- Container for just one project ---*/
 .containerForOneProject{
-	display: flex;
-	justify-content: flex-start;
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-between;
+/*	flex-wrap: wrap;*/
 }
 
 /*--- Container for the info section/right-column ---*/
