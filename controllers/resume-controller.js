@@ -56,7 +56,7 @@ myapp.controller('resume-controller', ['$scope','$location', '$route', '$window'
         {
               title: "10x10KCuba",
              period:  "January 2016 - present",
-        description:  "Helping to build a lasting and mutually beneficial partnership between Stanford students and entrepreneurs in Cuba who are shaping the socio-economic landscape in the island. This partnership will encourage technical and cultural exchange and empowers all participants to be changemakers in their societies. Our team has succesfully secured funding through Stanford School of Engineering to bring four Cuban entreprenerus to the Sillicon Valley in Winter or Spring quarter of 2017. Learn more by clicking on the link at the bottom of the page" 
+        description:  "Helping to build a lasting and mutually beneficial partnership between Stanford students and entrepreneurs in Cuba who are shaping the socio-economic landscape in the island. This partnership will encourage technical and cultural exchange and empowers all participants to be changemakers in their societies. Our team has succesfully secured funding through Stanford School of Engineering to bring four Cuban entreprenerus to the Sillicon Valley in Winter or Spring quarter of 2017. Learn more at the bottom of the page" 
       }, 
       {
               title: "Blood Donor",
@@ -66,7 +66,7 @@ myapp.controller('resume-controller', ['$scope','$location', '$route', '$window'
       {
               title: "Interdisciplinary Exchange of the Americas",
              period: "Spring 2015",
-        description: "IdEA sought to inspire and empower Cuban and U.S. students to learn from one another by collaborating on projects that tackled social issues in the island using technology. We officially partnered with with Stanford's Haas Center for Public Service, who provided the funding. After meeting with medical and educational institutions in the island, we were no longer able to continue with our project due to the lack of support and approval from the Cuban government"
+        description: "IdEA sought to inspire and empower Cuban and U.S. students to learn from one another by collaborating on projects that tackled social issues in the island using technology. We officially partnered with with Stanford's Haas Center for Public Service, who provided the funding. After meeting with medical and educational institutions in the island, we were no longer able to continue with our project due to the lack of support and approval from the Cuban government. Learn more at the bottom of the page"
       },
       {
               title: "Instructor at Schools Uniting Neighborhoods, Gresham Elementary School, OR",
