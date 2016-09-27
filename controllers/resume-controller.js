@@ -3,39 +3,76 @@ myapp.controller('resume-controller', ['$scope','$location', '$route', '$window'
     console.log("got to Resume Controller");
     $rootScope.linux = false;
     $scope.pageClass = 'containerResume';
-    var jobsList =[
+    var jobsList = [
       {
-              title: "Home Depot",
-        description: "I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself."
+              title: "Admission Associate, Stanford Admissions Office, CA",
+             period: "June 2014-present",
+        description: "Present Stanford admission information to audiences of 90-120. Worked on projects for multiple teams, including collaborating to construct admission case studies and assisting with training of new Admission Associates."
+        
       },
       {
-              title: "Tutor",
-        description: "I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself."
+              title: "Research Intern, Stanford School of Medicine, CA",
+             period: "January 2014-Sept 2014",
+        description: "Contributed to the development of a collagen patch containing Follistatin-like 1 (FSTL1) that helped regenerate cardiomyocytes upon induced heart attack. In charge of mice genotyping and other lab work such as media preparation and autoclave. Cultivated and thawed HEK-1 cells and cardiomyocytes."
       },
       {
-              title: "Medical School",
-        description: "I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself."
-      }
+              title: "Science and Spanish tutor, Mt. Hood Community College, OR",
+             period: "September 2011-August 2013",
+        description: "Assist students in reviewing material and clarifying content in Chemistry, Physics, Math and Spanish."
+      },
+      {
+              title: "Tool Rental Sales Associate, The Home Depot – Troutdale, OR",
+             period: "May 2011-August 2013",
+        description: "Performed cashier register transactions and maintained accurate balances, set up tool rental contracts and filed documents, cleaned and repaired power tools. • Provided quality customer service: One of 15/310 employees selected for 2012 All Stars best service. "
+      },
+      {
+              title: "Janitor, Hadwick Insurance Company – Portland, OR",
+             period: "January 2011- June 2012",
+        description: "Responsible for cleaning building, removing debris, and keeping areas neat and tidy"
+      },
+      {
+              title: "Tour Guide, Sinh Café Tourism Agency - Ho Chi Minh City, Vietnam",
+             period: "February 2010- September 2010",
+        description: "Led Spanish-speaking tour groups around Ho Chi Minh City to places of cultural interest."
+      },
+      {
+              title: "Squad Leader, Tank Artillery Specialist, Cuban Armed Forces – La Havana, Cuba",
+             period: "May 2008- January 2010",
+        description: "As squad leader, provided mentorship and management for over 15 soldiers. • Specialized as a PKM-tank machine gunner."
+      },
 
     ];
-
-    var educationList= [
+ 
+    var educationList = [
       {
               title: "Stanford University",
-        description:  'B.S, Computer Science  --- 2018'
-      }
+             period:  "2018",
+        description:  "B.S, Computer Science"
+      }  
     ];
 
+
     var publicServiceList = [
+        {
+              title: "10x10KCuba",
+             period:  "January 2016 - present",
+        description:  "Helping to build a lasting and mutually beneficial partnership between Stanford students and entrepreneurs in Cuba who are shaping the socio-economic landscape in the island. This partnership will encourage technical and cultural exchange and empowers all participants to be changemakers in their societies. Our team has succesfully secured funding through Stanford School of Engineering to bring four Cuban entreprenerus to the Sillicon Valley in Winter or Spring quarter of 2017. Learn more by clicking on the link at the bottom of the page" 
+      }, 
       {
-              title: "Cuba Emprende",
-        description: "I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself."
+              title: "Blood Donor",
+             period:  "2011 - present",
+        description:  "Have Donated blood for American Red Cross and Stanford Blood Center" 
+      }, 
+      {
+              title: "Interdisciplinary Exchange of the Americas",
+             period: "Spring 2015",
+        description: "IdEA sought to inspire and empower Cuban and U.S. students to learn from one another by collaborating on projects that tackled social issues in the island using technology. We officially partnered with with Stanford's Haas Center for Public Service, who provided the funding. After meeting with medical and educational institutions in the island, we were no longer able to continue with our project due to the lack of support and approval from the Cuban government"
       },
       {
-              title: "Uniting Neighborhoods",
-        description: "I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself."
+              title: "Instructor at Schools Uniting Neighborhoods, Gresham Elementary School, OR",
+             period: "2011-2013",
+        description: "Taught low-income Latino immigrants classes including Spanish literacy, Computer basic skills, Meditation, and Math for GED-students."
       }
-
     ];  
 
 

@@ -17,9 +17,10 @@
 					</div>
 
 					<section class="containerForText">
-						<section ng-repeat="job in dataSet.data">
-							<h4>{{job.title}}</h4>
-							<p class= "resumeTextFont"> {{job.description}} </p>
+						<section ng-repeat="job in dataSet.data">						
+								<h4 id="jobTitle"> {{job.title}} </h4>    
+								<h4 id="period"> {{job.period}}</h4>						
+							<p class="resumeTextFont"> {{job.description}} </p>
 						</section>
 					</section>	
 				</section>
