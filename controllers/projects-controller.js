@@ -15,8 +15,8 @@
         $scope.addSlide = function() {
             var newWidth = 600 + slides.length + 1;
             slides.push({
-                image: 'images/pup' + currIndex+ '.png',
-                text: ['Puppy1','Puppy2','Puppy3'][slides.length % 3],
+                image: 'images/heap' + currIndex+ '.png',
+                // text: ['Puppy1','Puppy2','Puppy3'][slides.length % 3],
                 id: currIndex++
             });
         };
