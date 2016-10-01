@@ -53,7 +53,30 @@
 
             for (var i = 0; i < 7; i++) {
                 $scope.addUnagi();
-            }         
+            }  
+
+
+ //--- Unagi Slides for carousel ---
+           $scope.photoInterval = 10000;
+           $scope.photoNoWrapSlides = false;          
+           $scope.photoActive = 0;
+           var photoSlides = $scope.photoSlides = [];
+           var photoIndex = 0;
+
+
+            $scope.addPhotoSharing = function() {
+                 var newWidth = 600 + photoSlides.length + 1;
+                 photoSlides.push({
+                     image: 'images/share' + photoIndex+ '.png',
+                 // text: ['Puppy1','Puppy2','Puppy3'][slides.length % 3],
+                     id: photoIndex++
+                 });
+            };  
+
+            for (var i = 0; i < 6; i++) {
+                $scope.addPhotoSharing();
+            }   
+
 
         // currIndex
 

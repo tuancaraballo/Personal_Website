@@ -53,7 +53,7 @@
 
     </section>
 	   
-	   <div id="Line1"> </div>
+	 <div id="Line1"> </div>
    <section class="containerForOneProject">
       <!-- <div style="width=250px height: 177px"> -->
       <!-- This style doesn't really matter, but the actual size of the photo -->
@@ -96,6 +96,51 @@
 
     </section>
 
+    <div id="Line1"> </div>
+
+
+    <section class="containerForOneProject">
+      <!-- <div style="width=250px height: 177px"> -->
+      <!-- This style doesn't really matter, but the actual size of the photo -->
+      <div style="align-self:center;">
+        <div uib-carousel active="photoActive" interval="photoInterval" no-wrap="photoNoWrapSlides">
+          <div uib-slide ng-repeat="photoSlide in photoSlides" index="photoSlide.id">
+            <img ng-src="{{photoSlide.image}}" style="margin:auto;">
+              <div class="carousel-caption">
+                <!-- <h4>Slide {{slide.id}}</h4>
+                <p>{{slide.text}}</p> -->
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="projectInfo">
+          
+        <div class="titleCircle">
+          Project | 03
+        </div>  
+
+        <h5 class="projectTitle"> <strong> Project | 03 Photo Sharing App </strong> <h5/>
+
+       <!--  <section style="font-size:13px">   -->
+       <ul>
+          <li class="projectListItem">
+              This is a Photo-Sharing App, sort of like a mini Instagram. I built it using MEAN Stack( MongoDB, Express, Angular, NodeJs) in addition to CSS and HTML and some Material Design.
+         </li>
+
+          <li class="projectListItem">
+              Main functionalities included: - Registering a new user: Logging in and logging out, upload and post photos, post Comments, Like a photos and show how many likes each photo has, see the most recent added photo, see the most commented photo, see user's current activity, an Activities feed that allow you to see all users' actions.
+          </li> 
+   
+          <li class="projectListItem">
+              
+            <a href="https://youtu.be/lcGiz1JiVeI">  Watch a walkthrough of my app here </a>
+          </li>  
+        </ul>
+      
+      </section>  
+
+    </section>
 
   </section> 		  
 </div>
