@@ -3,7 +3,7 @@
 .containerProjects{
 	display: flex;
 	/*justify-content:flex-start;*/
-	justify-content: flex-start;
+	/*justify-content: flex-start;*/
 /*	margin-left: 10%;
 	margin-right: 10%;*/
 	margin-bottom: 10%;
@@ -121,6 +121,10 @@
 	margin-bottom: 1em;
 	height: 1px;
 	width: 100%;
+}
+
+.projectListItem {
+	margin-bottom: 2%;
 }
 
 

@@ -8,10 +8,10 @@
 	 <section class="containerForOneProject">
 			<!-- <div style="width=250px height: 177px"> -->
 			<!-- This style doesn't really matter, but the actual size of the photo -->
-			<div>
-    		<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-      		<div uib-slide ng-repeat="slide in slides" index="slide.id">
-        		<img ng-src="{{slide.image}}" style="margin:auto;">
+			<div style="align-self:center;">
+    		<div uib-carousel active="heapActive" interval="heapInterval" no-wrap="heapNoWrapSlides">
+      		<div uib-slide ng-repeat="heapSlide in heapSlides" index="heapSlide.id">
+        		<img ng-src="{{heapSlide.image}}" style="margin:auto;">
         			<div class="carousel-caption">
          			  <!-- <h4>Slide {{slide.id}}</h4>
           			<p>{{slide.text}}</p> -->
@@ -27,11 +27,75 @@
   			</div>	
 
   			<h5 class="projectTitle"> <strong> Project | 01 Heap Allocator </strong> <h5/>
-        <p> Being from Cuba, I consider myself to be a pretty cool salsa and reguetton dancer :-) -a serum all Cuban babies receive when they are born :-) -. I aspire to turn my knowldge and skills into opportunities for my people in my home country. I intend to go back to support young entreprenerus who are already challenging the status quo and making a difference in the lives of those less fortunate. Being from Cuba, I consider myself to be a pretty cool salsa and reguetton dancer :-) -a serum all Cuban babies receive when they are born :-) -. I aspire to turn my knowldge and skills into opportunities for my people in my home country. I intend to go back to support young entreprenerus who are already challenging the status quo and making a difference in the lives of those less fortunate. </p>
 
-  		</section>	
+        <ul style="max-width: 90%">
+          <li class="projectListItem">
+             This is the final project for the popular course CS107, taught at Stanford. I built a heap allocator; implemented the functions malloc, free and realloc.
+          </li>
+          
+          <li class="projectListItem">
+              I designed the allocator using segragated linked lists of free memory. I divided free blocks in three group sizes: small, medium and large and stored in a table, giving it a dynamic design. When memmory was requested, the allocator would first check the cached blocks before extending the heap. If a cached block was too big compared to the requested size, the allocator would split it, but before adding the remaining to the table, it checked if its left and right neighbors were free to coalesce them.
+          </li>   
+          
+          <li class="projectListItem">
+              Each free block contained a header and a footer structure to store size and status. This way the allocator would know the exact location of the contiguous neighbors before coalescing them
+          </li>  
+
+           <li class="projectListItem">
+              The most important lessons I learned on this project was how the heap works. Similarly, I developed a strong foundation on the use of pointers and pointer arithmatic. However, I would say the most valuable lessons was "paying attention to small details and staying consistent with my code" and in order to stay consistent, first I must spend time designing on paper, before writing any code. This has been one of the most challenging, yet most rewarding projects I have worked on
+          </li>  
+
+
+       </ul>
+    
+  		
+      </section>	
+
     </section>
 	   
 	   <div id="Line1"> </div>
+   <section class="containerForOneProject">
+      <!-- <div style="width=250px height: 177px"> -->
+      <!-- This style doesn't really matter, but the actual size of the photo -->
+      <div style="align-self:center;">
+        <div uib-carousel active="unagiActive" interval="unagiInterval" no-wrap="unagiNoWrapSlides">
+          <div uib-slide ng-repeat="unagiSlide in unagiSlides" index="unagiSlide.id">
+            <img ng-src="{{unagiSlide.image}}" style="margin:auto;">
+              <div class="carousel-caption">
+                <!-- <h4>Slide {{slide.id}}</h4>
+                <p>{{slide.text}}</p> -->
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="projectInfo">
+          
+        <div class="titleCircle">
+          Project | 02
+        </div>  
+
+        <h5 class="projectTitle"> <strong> Project | 02 Unagi Task Manager </strong> <h5/>
+
+       <!--  <section style="font-size:13px">   -->
+       <ul>
+          <li class="projectListItem">
+              I built a Task Manager for Android. I developed this app while at an Android BootCamp at Twitter headquarters (Thank you much Twitter!). Unagi's purpose is to help individuals stays productive with the help of a social twist.
+          </li>
+
+          <li class="projectListItem">
+              Whenever the user posts a task, this gets posted to her Twitter account, holding the person accountable for it. When the task is either finished or not completed on time, the app posts to the user's Twitter. There is no an option to delete tasks.
+          </li> 
+   
+          <li class="projectListItem">
+              I used Twitter's Fabric API for the login portion as well as for the posting. Similarly, for the list of activities I used RecyclerView instead of ListView.
+          </li>  
+        </ul>
+      
+      </section>  
+
+    </section>
+
+
   </section> 		  
 </div>
