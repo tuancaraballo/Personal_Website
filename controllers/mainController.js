@@ -15,9 +15,9 @@
                     templateUrl: '/components/home.html',
                     controller: 'home-controller'
                 }).
-                 when('/about', {
+                 when('/more', {
                     templateUrl: '/components/more.html',
-                    controller: 'about-controller'
+                    controller: 'more-controller'
                 }).
                  when('/resume', {
                     templateUrl: '/components/resume.html',
@@ -97,11 +97,11 @@
         previousButton = 'resumeButton';
       }  
        $scope.showSkills = function(){
-        $location.path('/contact');
-        currentButton = 'contactButton';
+        $location.path('/more');
+        currentButton = 'moreButton';
         changePreviousElementColor();
          changeCurrentElementColor();
-        previousButton = 'contactButton';
+        previousButton = 'moreButton';
       }         
 
 }]);
