@@ -35,7 +35,7 @@
 
 
  //--- Unagi Slides for carousel ---
-           $scope.unagiInterval = 10000;
+           $scope.unagiInterval = 12000;
            $scope.unagiNoWrapSlides = false;          
            $scope.unagiActive = 0;
            var unagiSlides = $scope.unagiSlides = [];
@@ -57,7 +57,7 @@
 
 
  //--- Unagi Slides for carousel ---
-           $scope.photoInterval = 10000;
+           $scope.photoInterval = 15000;
            $scope.photoNoWrapSlides = false;          
            $scope.photoActive = 0;
            var photoSlides = $scope.photoSlides = [];

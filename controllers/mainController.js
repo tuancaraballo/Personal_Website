@@ -16,7 +16,7 @@
                     controller: 'home-controller'
                 }).
                  when('/about', {
-                    templateUrl: '/components/about.html',
+                    templateUrl: '/components/more.html',
                     controller: 'about-controller'
                 }).
                  when('/resume', {
