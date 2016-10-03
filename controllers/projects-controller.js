@@ -75,7 +75,28 @@
 
             for (var i = 0; i < 6; i++) {
                 $scope.addPhotoSharing();
-            }   
+            }
+
+ //--- Pyxis Slides for carousel ---
+           $scope.pyxisInterval = 12000;
+           $scope.pyxisNoWrapSlides = false;          
+           $scope.pyxisActive = 0;
+           var pyxisSlides = $scope.pyxisSlides = [];
+           var pyxisIndex = 0;
+
+
+            $scope.addPyxis = function() {
+                 var newWidth = 600 + pyxisSlides.length + 1;
+                 pyxisSlides.push({
+                     image: 'images/pyxis' + pyxisIndex+ '.png',
+                 // text: ['Puppy1','Puppy2','Puppy3'][slides.length % 3],
+                     id: pyxisIndex++
+                 });
+            };  
+
+            for (var i = 0; i < 2; i++) {
+                $scope.addPyxis();
+            }                  
 
 
         // currIndex

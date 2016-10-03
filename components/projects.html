@@ -142,5 +142,47 @@
 
     </section>
 
+
+        <div id="Line1"> </div>
+
+
+    <section class="containerForOneProject">
+      <!-- <div style="width=250px height: 177px"> -->
+      <!-- This style doesn't really matter, but the actual size of the photo -->
+      <div style="align-self:center;">
+        <div uib-carousel active="pyxisActive" interval="pyxisInterval" no-wrap="pyxisNoWrapSlides">
+          <div uib-slide ng-repeat="pyxisSlide in pyxisSlides" index="pyxisSlide.id">
+            <img ng-src="{{pyxisSlide.image}}" style="margin:auto;">
+              <div class="carousel-caption">
+                <!-- <h4>Slide {{slide.id}}</h4>
+                <p>{{slide.text}}</p> -->
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="projectInfo">
+          
+        <div class="titleCircle">
+          Project | 04
+        </div>  
+
+        <h5 class="projectTitle"> <strong> Project | 04 Pyxis Explorer </strong> <h5/>
+
+       <!--  <section style="font-size:13px">   -->
+       <ul>
+          <li class="projectListItem">
+              This is an ongoing summer project, still under development. Pyxis is the modern "brújula". It allows users to know what's going on around them such as location, weather, local news, local events, meet-ups, places of interest classified by entertainment, night life, historical, etc.
+         </li>
+
+          <li class="projectListItem">
+              Pyxis uses/will be using the following APIs: Google Play Services Apis, Yelp, OpenWeatherMap, EventBrite and New York Times.
+          </li> 
+        </ul>
+      
+      </section>  
+
+    </section>
+
   </section> 		  
 </div>
