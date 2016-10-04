@@ -69,6 +69,7 @@
 /*-- Colors --*/
 .blue{
 	color: blue;
+  cursor:pointer;
 }
 
 .red{

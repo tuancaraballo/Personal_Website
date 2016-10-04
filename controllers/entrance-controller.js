@@ -29,5 +29,11 @@ myapp.controller('entrance-controller', ['$scope','$location', '$route', '$windo
 
             }
 
+            $scope.sendToWebsite = function () {
+                    $rootScope.linux = false;
+                    $rootScope.linux = false;
+                    $location.path('/home');
+            }
+
                  
 }]);
