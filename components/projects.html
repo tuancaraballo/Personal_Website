@@ -30,19 +30,19 @@
 
         <ul style="max-width: 90%">
           <li class="projectListItem">
-             This is the final project for the popular course CS107, taught at Stanford. I built a heap allocator; implemented the functions malloc, free and realloc.
+             This is the final project for the popular course CS107, taught at Stanford. I built a heap allocator by implementing the functions malloc, free, and realloc.
           </li>
           
           <li class="projectListItem">
-              I designed the allocator using segragated linked lists of free memory. I divided free blocks in three group sizes: small, medium and large and stored in a table, giving it a dynamic design. When memmory was requested, the allocator would first check the cached blocks before extending the heap. If a cached block was too big compared to the requested size, the allocator would split it, but before adding the remaining to the table, it checked if its left and right neighbors were free to coalesce them.
+              I designed the allocator using segregated linked lists of free memory. I divided free blocks into three group sizes: small, medium and large, and stored them in a table, creating a dynamic design. When memory was requested, the allocator would first check the cached free blocks before extending the heap. If a cached block was bigger than the requested size, the allocator would split the block, if possible, coalescing the separated free block with other free neighbors before adding it to the freed table.
           </li>   
           
           <li class="projectListItem">
-              Each free block contained a header and a footer structure to store size and status. This way the allocator would know the exact location of the contiguous neighbors before coalescing them
+              Each free block contained a header and a footer structure to store size and status. This way, the allocator knew the exact location of the contiguous neighboring blocks before coalescing them.
           </li>  
 
            <li class="projectListItem">
-              The most important lessons I learned on this project was how the heap works. Similarly, I developed a strong foundation on the use of pointers and pointer arithmatic. However, I would say the most valuable lessons was "paying attention to small details and staying consistent with my code" and in order to stay consistent, first I must spend time designing on paper, before writing any code. This has been one of the most challenging, yet most rewarding projects I have worked on
+              One of the most important lessons I learned on this project was how the heap works. Similarly, I developed a strong foundation on the use of pointers and pointer arithmetic. However, I would say the most valuable lesson was paying attention to small details and staying consistent with my code. In order to stay consistent, I focused on spending time designing my program on paper, before writing any code. This has been one of the most challenging, yet most rewarding projects I have worked on.
           </li>  
 
 
@@ -80,11 +80,11 @@
        <!--  <section style="font-size:13px">   -->
        <ul>
           <li class="projectListItem">
-              I built a Task Manager for Android. I developed this app while at an Android BootCamp at Twitter headquarters (Thank you much Twitter!). Unagi's purpose is to help individuals stays productive with the help of a social twist.
+              I built a Task Manager for Android named Unagi. I developed this app while at an Android BootCamp at Twitter headquarters (Thank you very much, Twitter!). Unagi's purpose is to help individuals stays productive with the help of a social twist.
           </li>
 
           <li class="projectListItem">
-              Whenever the user posts a task, this gets posted to her Twitter account, holding the person accountable for it. When the task is either finished or not completed on time, the app posts to the user's Twitter. There is no an option to delete tasks.
+              Whenever the user posts a task, this gets posted to his or her Twitter account, holding the person accountable for it. When the task is either finished or not completed on time, the app posts to the user's Twitter. There is no option to delete tasks.
           </li> 
    
           <li class="projectListItem">
@@ -125,11 +125,11 @@
        <!--  <section style="font-size:13px">   -->
        <ul>
           <li class="projectListItem">
-              This is a Photo-Sharing App, sort of like a mini Instagram. I built it using MEAN Stack( MongoDB, Express, Angular, NodeJs) in addition to CSS and HTML and some Material Design.
+              This is a Photo-Sharing App, similar to a mini version of Instagram. I built it using MEAN Stack ( MongoDB, Express, Angular, NodeJs) in addition to CSS and HTML, along with some Material Design.
          </li>
 
           <li class="projectListItem">
-              Main functionalities included: - Registering a new user: Logging in and logging out, upload and post photos, post Comments, Like a photos and show how many likes each photo has, see the most recent added photo, see the most commented photo, see user's current activity, an Activities feed that allow you to see all users' actions.
+              Main functionalities included: Registering a new user, logging in and logging out, uploading and posting photos, posting comments, liking photos and showing how many likes each photo has, seeing the most recently added photo, seeing the most commented photo, seeing user's current activity, and an Activities feed displaying all users' actions.
           </li> 
    
           <li class="projectListItem">
@@ -172,7 +172,7 @@
        <!--  <section style="font-size:13px">   -->
        <ul>
           <li class="projectListItem">
-              This is an ongoing summer project, still under development. Pyxis is the modern "brújula". It allows users to know what's going on around them such as location, weather, local news, local events, meet-ups, places of interest classified by entertainment, night life, historical, etc.
+              This is an ongoing summer project, still under development. Pyxis is the modern "brújula". It allows users to know what's going on around them such as their location, local weather, news, events, meet-ups, places of interest filtered by entertainment, night life, historical sites, etc.
          </li>
 
           <li class="projectListItem">
