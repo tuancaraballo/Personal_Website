@@ -41,7 +41,7 @@
         function ($scope, $route, $http, $window, $location, $rootScope) {
             console.log("got to Controller");
 
-            $scope.first_name = 'Tuan Anh Tran Caraballo';
+            $scope.first_name = 'Antuan Caraballo';
             $scope.main = {};
             $scope.main.title = 'Tuan Anh Tran Caraballo';
 
