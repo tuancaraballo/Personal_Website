@@ -1,7 +1,7 @@
 
 'use strict';
 
-    var myapp = angular.module('myWebApp', ['ngRoute', 'ngMaterial', 'ngAnimate','ui.bootstrap']);
+    var myapp = angular.module('myWebApp', ['ngRoute', 'ngMaterial', 'ngAnimate','ui.bootstrap',]);
 
 
     myapp.config(['$routeProvider',
